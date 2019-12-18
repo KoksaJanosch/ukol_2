@@ -9,7 +9,8 @@ def sort_points():
     a = []
     for feat in data['features']:
         a.append(feat['geometry']['coordinates'])
-        a.sort()
-    print(a)
-
+    print("Původní seznam je: \n", a)
+    a.sort(key=lambda x: x[0])
+    print("Seřazený seznam je: \n",a)
 sort_points()
+
