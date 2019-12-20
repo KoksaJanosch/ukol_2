@@ -4,7 +4,6 @@ import math, json
 with open ("points.geojson", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-
 def bounding_box():
     souradnice_list = []
     # vypiš z "features" všechny "coordinates" z kat. geometry
@@ -29,4 +28,11 @@ def bounding_box():
     mid_y = (dole + hore) / 2
     print("\n mid_x", mid_x, "\n mid_y", mid_y)
 
+    # vypíš počet bodů ze seznamu:
+    print("\n Počet bodů: \n", len(souradnice_list))
+
+
 bounding_box()
+
+
+

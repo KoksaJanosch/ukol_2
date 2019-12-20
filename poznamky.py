@@ -10,3 +10,14 @@ print("The Minimum of each index list is : " + str(res))
 a_min = min(i[0] for i in test_list)
 [i[0] for i in test_list if i[1] == a_min and i[0] > 10000] + [a_min]
 print(a_min)
+
+
+### Sketch:
+# urči území indexu (1,2)
+
+
+if POINT [0] > vlevo and \
+   POINT [0] < vpravo and \
+   POINT [1] > dole and \
+   POINT [1] < hore:
+    print(POINT, "nachází se v BB")
