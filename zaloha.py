@@ -35,21 +35,23 @@ def bounding_box():
         y = (souradnice_list[i][1])
         print(x, y)
 
-        if vlevo <= x <= vpravo and \
-                dole <= y <= hore:
-            print("pokračujem dělením")
+        if vlevo < x < vpravo and \
+                dole < y < hore:
+            print("pokračujem")
         else:
             print("přiřad cluster_id")
 
 
     # dokud nebude v boxu jen 1 bod, pokračuj:
-   # while len(vboxu) > 1: # pak předělat na 50
+    while len(vboxu) > 1: # pak předělat na 50
         # rozděl na poloviny
-    #    mid_x = (vlevo + vpravo) / 2
-    #    mid_y = (dole + hore) / 2
-    #    print("\n mid_x", mid_x, "\n mid_y", mid_y)
+        mid_x = (vlevo + vpravo) / 2
+        mid_y = (dole + hore) / 2
+        print("\n mid_x", mid_x, "\n mid_y", mid_y)
 
-    #else:
-     #   print("Zaznamenej cluster_id")
+
+    else:
+        print("Přidám cluster_id")
+       # data[properties][cluster_id] = +1
 
 bounding_box()

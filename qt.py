@@ -18,7 +18,6 @@ for i in range(len(test_list)):
     y = (test_list[i][1])
     print(x, y)
 
-
     if vlevo < x < vpravo and \
             dole < y < hore:
         print("pokračujem")
@@ -28,3 +27,11 @@ for i in range(len(test_list)):
 
 print(test_list)
 
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["color"] = "red"
+print(thisdict)
