@@ -21,3 +21,10 @@ if POINT [0] > vlevo and \
    POINT [1] > dole and \
    POINT [1] < hore:
     print(POINT, "nachází se v BB")
+
+for bod in test_list:
+    for index in bod:
+        if test_list[my_index][O] >= vlevo:
+            print("To je ono!")
+        else:
+            print("Kua")
